@@ -1,0 +1,51 @@
+{
+  "name": "generator-babel-webpack-karma",
+  "version": "0.0.9",
+  "description": "Yeoman generator to build npm client side libraries using babel, webpack & karma",
+  "author": {
+    "name": "Ignacio Anaya",
+    "email": "ignacio.anaya89@gmail.com"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "babel",
+    "yeoman",
+    "generator",
+    "karma",
+    "webpack",
+    "npm",
+    "lib",
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "to-case": "^2.0.0",
+    "yeoman-generator": "^0.24.1",
+    "yosay": "^1.2.0"
+  },
+  "devDependencies": {
+    "yeoman-test": "^1.0.0",
+    "yeoman-assert": "^2.0.0",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-react": "^6.0.0",
+    "gulp": "^3.9.1",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-istanbul": "^1.0.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-coveralls": "^0.1.0"
+  },
+  "repository": "ianaya89/generator-babel-webpack-karma",
+  "license": "MIT"
+}
