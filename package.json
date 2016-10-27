@@ -1,5 +1,5 @@
 {
-  "name": "generator-vue-components",
+  "name": "generator-vue-component",
   "version": "0.0.9",
   "description": "Yeoman generator to build Vue.js components",
   "author": {
@@ -23,7 +23,7 @@
     "npm",
     "vue",
     "components",
-    "vuejs"
+    "vuejs",
     "lib",
     "yeoman-generator"
   ],
