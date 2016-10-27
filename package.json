@@ -1,7 +1,7 @@
 {
-  "name": "generator-babel-webpack-karma",
+  "name": "generator-vue-components",
   "version": "0.0.9",
-  "description": "Yeoman generator to build npm client side libraries using babel, webpack & karma",
+  "description": "Yeoman generator to build Vue.js components",
   "author": {
     "name": "Ignacio Anaya",
     "email": "ignacio.anaya89@gmail.com"
@@ -21,6 +21,9 @@
     "karma",
     "webpack",
     "npm",
+    "vue",
+    "components",
+    "vuejs"
     "lib",
     "yeoman-generator"
   ],
@@ -46,6 +49,6 @@
     "gulp-nsp": "^2.1.0",
     "gulp-coveralls": "^0.1.0"
   },
-  "repository": "ianaya89/generator-babel-webpack-karma",
+  "repository": "ianaya89/generator-vue-component",
   "license": "MIT"
 }
