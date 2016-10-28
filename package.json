@@ -1,7 +1,7 @@
 {
   "name": "generator-vue-component",
   "version": "0.0.9",
-  "description": "Yeoman generator to build Vue.js components",
+  "description": "Yeoman generator to build custom Vue.js components",
   "author": {
     "name": "Ignacio Anaya",
     "email": "ignacio.anaya89@gmail.com"
