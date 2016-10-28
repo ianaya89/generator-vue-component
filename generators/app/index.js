@@ -102,6 +102,15 @@ const libraryGenerator = generators.Base.extend({
       );
     },
 
+    index() {
+      this.fs.copyTpl(
+        this.templatePath('index.html'),
+        this.destinationPath('index.html'), {
+          libraryName       : this.libraryName
+        }
+      );
+    },
+
     readme() {
       this.fs.copyTpl(
         this.templatePath('_README.md'),
