@@ -4,6 +4,7 @@
 
 <div style="text-align:center">
   <img src="img/vue.png" alt="vue" title="vue"/>
+  <img src="img/yo.png" alt="yo" title="yo"/>
 </div>
 
 
