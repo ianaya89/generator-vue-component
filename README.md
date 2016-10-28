@@ -1,10 +1,10 @@
 # generator-vue-component
 
-> Yeoman generator to build npm client side libraries using babel, webpack & karma
+> Yeoman generator to build custom Vue.js components
 
-<p style="text-align: center">
+<div style="text-align:center">
   <img src="img/vue.png" alt="vue" title="vue"/>
-</p>
+</div>
 
 
 ### Installation
