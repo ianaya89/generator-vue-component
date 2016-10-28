@@ -2,7 +2,9 @@
 
 > Yeoman generator to build npm client side libraries using babel, webpack & karma
 
-![vue](img/vue.png)
+<p style="text-align: center">
+  <img src="img/vue.png" alt="vue" title="vue"/>
+</p>
 
 
 ### Installation
