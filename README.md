@@ -2,6 +2,13 @@
 
 > Yeoman generator to build custom [Vue.js](http://vuejs.org/) components
 
+[![CircleCI](https://circleci.com/gh/ianaya89/generator-vue-component.svg?style=svg)](https://circleci.com/gh/ianaya89/generator-vue-component)
+[![Coverage Status](https://coveralls.io/repos/github/ianaya89/generator-vue-component/badge.svg?branch=master)](https://coveralls.io/github/ianaya89/generator-vue-component?branch=master)
+[![bitHound Overall Score](https://www.bithound.io/github/ianaya89/generator-vue-component/badges/score.svg)](https://www.bithound.io/github/ianaya89/generator-vue-component)
+[![bitHound Dependencies](https://www.bithound.io/github/ianaya89/generator-vue-component/badges/dependencies.svg)](https://www.bithound.io/github/ianaya89/generator-vue-component/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/ianaya89/generator-vue-component/badges/devDependencies.svg)](https://www.bithound.io/github/ianaya89/generator-vue-component/master/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/github/ianaya89/generator-vue-component/badges/code.svg)](https://www.bithound.io/github/ianaya89/generator-vue-component)
+
 <div style="text-align:center">
   <img src="img/yeoman.png" alt="yo" title="yo"/>
 </div>
