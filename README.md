@@ -1,4 +1,4 @@
-# generator-babel-webpack-karma
+# generator-vue-component
 
 > Yeoman generator to build npm client side libraries using babel, webpack & karma
 
@@ -9,17 +9,17 @@
 
 ### Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-babel-webpack-karma using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-vue-component using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-babel-webpack-karma
+npm install -g generator-vue-component
 ```
 
 Then generate your new project:
 
 ```bash
-yo babel-webpack-karma
+yo generator-vue-component
 ```
 
 ### Scaffolding
