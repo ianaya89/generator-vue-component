@@ -18,7 +18,7 @@ const libraryGenerator = generators.Base.extend({
         name    : 'libraryName',
         type    : 'input',
         message : 'Library name:',
-        filter  : (answer) => to.slug(answer),
+        filter  : answer => to.slug(answer),
         default : path.basename(this.destinationPath())
       }, {
         name    : 'libraryDescription',
@@ -39,7 +39,7 @@ const libraryGenerator = generators.Base.extend({
         type    : 'input',
         message : 'Author email:',
         store   : true
-      }]).then(answers => {
+      }]).then((answers) => {
         this.libraryName        = answers.libraryName;
         this.libraryDescription = answers.libraryDescription;
         this.libraryVersion     = answers.libraryVersion;
@@ -59,6 +59,14 @@ const libraryGenerator = generators.Base.extend({
       this.directory('test', 'test');
     },
 
+    build() {
+      this.directory('build', 'build', { libraryName: this.libraryName });
+    },
+
+    docs() {
+      this.directory('docs', 'docs', { libraryName: this.libraryName });
+    },
+
     gitignore() {
       this.fs.copy(
         this.templatePath('gitignore'),
@@ -68,8 +76,8 @@ const libraryGenerator = generators.Base.extend({
 
     eslintrc() {
       this.fs.copy(
-        this.templatePath('eslintrc.json'),
-        this.destinationPath('.eslintrc.json')
+        this.templatePath('eslintrc.js'),
+        this.destinationPath('.eslintrc.js')
       );
     },
 
@@ -111,23 +119,6 @@ const libraryGenerator = generators.Base.extend({
       );
     },
 
-    maintainers() {
-      this.fs.copyTpl(
-        this.templatePath('_MAINTAINERS'),
-        this.destinationPath('MAINTAINERS'), {
-          authorName  : this.authorName,
-          authorEmail : this.authorEmail
-        }
-      );
-    },
-
-    lgtm() {
-      this.fs.copy(
-        this.templatePath('lgtm'),
-        this.destinationPath('.lgtm')
-      );
-    },
-
     npm() {
       this.fs.copy(
         this.templatePath('npmrc'),
@@ -153,15 +144,6 @@ const libraryGenerator = generators.Base.extend({
       this.fs.copy(
         this.templatePath('circle.yml'),
         this.destinationPath('circle.yml')
-      );
-    },
-
-    webpack() {
-      this.fs.copyTpl(
-        this.templatePath('webpack.config.js'),
-        this.destinationPath('webpack.config.js'), {
-          libraryName: this.libraryName
-        }
       );
     },
 

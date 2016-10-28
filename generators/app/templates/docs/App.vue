@@ -1,12 +1,12 @@
 <template lang='pug'>
-  TestComponent
+  hello-world
 </template>
 
 <script>
-  import TestComponent from '../src/Component.vue';
+  import HelloWorld from '../src/HelloWorld.vue';
 
   export default {
     name: 'App',
-    components: [TestComponent]
+    components: [HelloWorld]
   };
 </script>
