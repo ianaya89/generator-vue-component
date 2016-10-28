@@ -24,7 +24,7 @@ npm install -g generator-vue-component
 Then generate your new project:
 
 ```bash
-yo generator-vue-component
+yo vue-component
 ```
 
 ### Scaffolding
