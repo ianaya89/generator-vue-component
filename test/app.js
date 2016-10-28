@@ -12,24 +12,28 @@ describe('generator-babel-webpack-karma:app', () => {
 
   it('creates files', () => {
     assert.file([
+      'src/HelloWorld.vue',
       'src/index.js',
       'test/index.js',
       'test/specs/index.spec.js',
       '.babelrc',
       '.editorconfig',
       '.eslintignore',
-      '.eslintrc.json',
+      '.eslintrc.js',
       '.gitignore',
-      '.lgtm',
       '.npmignore',
       '.npmrc',
       'circle.yml',
       'karma.conf.js',
       'LICENSE',
-      'MAINTAINERS',
       'package.json',
       'README.md',
-      'webpack.config.js'
+      'docs/App.vue',
+      'docs/main.js',
+      'build/utils.js',
+      'build/webpack.build.js',
+      'build/webpack.build.min.js',
+      'build/webpack.config.js'
     ]);
   });
 });
