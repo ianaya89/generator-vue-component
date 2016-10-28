@@ -1,6 +1,6 @@
 # generator-vue-component
 
-> Yeoman generator to build custom Vue.js components
+> Yeoman generator to build custom [Vue.js](http://vuejs.org/) components
 
 <div style="text-align:center">
   <img src="img/vue.png" alt="vue" title="vue"/>
