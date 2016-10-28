@@ -3,8 +3,7 @@
 > Yeoman generator to build custom [Vue.js](http://vuejs.org/) components
 
 <div style="text-align:center">
-  <img src="img/vue.png" alt="vue" title="vue"/>
-  <img src="img/yo.png" alt="yo" title="yo"/>
+  <img src="img/yeoman.png" alt="yo" title="yo"/>
 </div>
 
 
