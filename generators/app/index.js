@@ -9,7 +9,7 @@ const libraryGenerator = generators.Base.extend({
     welcome() {
       this.log(yosay(
         '\'Allo \'allo! Out of the box I include Babel, Webpack and Karma, as well as a' +
-        'few other goodies, to build your npm client side library.'
+        'few other goodies, to build your own reusable Vue.js Component.'
       ));
     },
 

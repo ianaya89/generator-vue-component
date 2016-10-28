@@ -1,5 +1,5 @@
 <template lang='pug'>
-  h1 Hello World 2
+  h1 Hello World
 </template>
 
 <script>
