@@ -1,17 +1,11 @@
 # generator-babel-webpack-karma
 
-[![npm version](https://badge.fury.io/js/generator-babel-webpack-karma.svg)](https://badge.fury.io/js/generator-babel-webpack-karma)
-[![Coverage Status](https://coveralls.io/repos/github/ianaya89/generator-babel-webpack-karma/badge.svg?branch=master)](https://coveralls.io/github/ianaya89/generator-babel-webpack-karma?branch=master)
-[![bitHound Dependencies](https://www.bithound.io/github/ianaya89/generator-babel-webpack-karma/badges/dependencies.svg)](https://www.bithound.io/github/ianaya89/generator-babel-webpack-karma/master/dependencies/npm)
-[![bitHound Dev Dependencies](https://www.bithound.io/github/ianaya89/generator-babel-webpack-karma/badges/devDependencies.svg)](https://www.bithound.io/github/ianaya89/generator-babel-webpack-karma/master/dependencies/npm)
-[![bitHound Code](https://www.bithound.io/github/ianaya89/generator-babel-webpack-karma/badges/code.svg)](https://www.bithound.io/github/ianaya89/generator-babel-webpack-karma)
-
 > Yeoman generator to build npm client side libraries using babel, webpack & karma
 
-![yeoman](img/yeoman.png)
+![vue](img/vue.png)
 
 
-## Installation
+### Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-babel-webpack-karma using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
@@ -26,11 +20,20 @@ Then generate your new project:
 yo babel-webpack-karma
 ```
 
-## Scaffolding
+### Scaffolding
 
 ```
+└───build/
+    ├───utils.js
+    ├───webpack.build.js
+    ├───webpack.build.min.js
+    ├───webpack.config.js
+└───docs/
+    ├───App.vue
+    ├───main.js
 └───src/
-|   ├───index.js
+    ├───HelloWorld.vue
+    ├───index.js
 └───test/
     ├───index.js
     ├───spec/
@@ -38,21 +41,41 @@ yo babel-webpack-karma
 ├───.babelrc
 ├───.editorconfig
 ├───.eslintignore
-├───.eslintrc.json
+├───.eslintrc.js
 ├───.gitignore
-├───.lgtm
 ├───.npmignore
 ├───.npmrc
 ├───circle.yml
 ├───karma.conf.js
 ├───LICENSE
-├───MAINTAINERS
 ├───package.json
 ├───README.md
-├───webpack.config.js
 ```
 
-## Getting To Know Yeoman
+### Development Setup
+
+```bash
+# install dependencies
+$ npm install
+
+# build docs (just first time)
+$ npm run docs
+
+# dev mode
+$ npm run dev
+
+# test
+$ npm run test
+
+# build component and get production release
+$ npm run build
+
+# build component and docs
+$ npm run build-all
+```
+
+
+### Getting To Know Yeoman
 
  * Yeoman has a heart of gold.
  * Yeoman is a person with feelings and opinions, but is very easy to work with.
@@ -61,4 +84,4 @@ yo babel-webpack-karma
 
 ## License
 
-MIT © [Ignacio Anaya]()
+MIT © [Ignacio Anaya](https://twitter.com/ianaya89)
