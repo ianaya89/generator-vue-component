@@ -2,6 +2,10 @@
 
 > <%= libraryDescription %>
 
+<p style="text-align: center">
+  <img src="img/vue.png" alt="vue" title="vue"/>
+</p>
+
 ### Development Setup
 
 ```bash
