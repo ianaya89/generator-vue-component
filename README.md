@@ -2,6 +2,8 @@
 
 > Yeoman generator to build custom [Vue.js](http://vuejs.org/) components
 
+:warning: This generator is built for Vue.js v.1, support for v.2 is under development and will be available soon. 
+
 [![bitHound Overall Score](https://www.bithound.io/github/ianaya89/generator-vue-component/badges/score.svg)](https://www.bithound.io/github/ianaya89/generator-vue-component)
 [![bitHound Dependencies](https://www.bithound.io/github/ianaya89/generator-vue-component/badges/dependencies.svg)](https://www.bithound.io/github/ianaya89/generator-vue-component/master/dependencies/npm)
 [![bitHound Dev Dependencies](https://www.bithound.io/github/ianaya89/generator-vue-component/badges/devDependencies.svg)](https://www.bithound.io/github/ianaya89/generator-vue-component/master/dependencies/npm)
