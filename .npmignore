@@ -1,6 +1,9 @@
 example
 test
+img
 .eslintrc
 .eslintignore
+.editorconfig
 circle.yml
 gulpfile.js
+
