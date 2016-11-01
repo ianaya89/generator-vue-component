@@ -55,6 +55,10 @@ const libraryGenerator = generators.Base.extend({
       this.directory('src', 'src');
     },
 
+    img() {
+      this.directory('img', 'img');
+    },
+
     test() {
       this.directory('test', 'test');
     },
