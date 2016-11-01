@@ -16,6 +16,7 @@ describe('generator-babel-webpack-karma:app', () => {
       'src/index.js',
       'test/index.js',
       'test/specs/index.spec.js',
+      'img/vue.png',
       '.babelrc',
       '.editorconfig',
       '.eslintignore',
