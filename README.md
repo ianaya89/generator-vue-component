@@ -67,7 +67,7 @@ yo vue-component
 # install dependencies
 $ npm install
 
-# build docs (just first time)
+# build docs
 $ npm run docs
 
 # dev mode
