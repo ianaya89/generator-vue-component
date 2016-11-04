@@ -21,3 +21,6 @@ $ npm run test
 # build
 $ npm run build
 ```
+
+
+* This project was built with [yeoman](http://yeoman.io/) and [generator-vue-component](https://github.com/ianaya89/generator-vue-component) :heart:*

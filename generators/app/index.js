@@ -71,6 +71,13 @@ const libraryGenerator = generators.Base.extend({
       this.directory('docs', 'docs', { libraryName: this.libraryName });
     },
 
+    favicon() {
+      this.fs.copy(
+        this.templatePath('favicon.ico'),
+        this.destinationPath('favicon.ico')
+      );
+    },
+
     gitignore() {
       this.fs.copy(
         this.templatePath('gitignore'),
