@@ -10511,7 +10511,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-0212ca58/App.vue"
+	  var id = "_v-d5f83ea2/App.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -10561,7 +10561,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-561f03f6/HelloWorld.vue"
+	  var id = "_v-18b485e6/HelloWorld.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -10585,8 +10585,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-561f03f6&scoped=true!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./HelloWorld.vue", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-561f03f6&scoped=true!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./HelloWorld.vue");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-18b485e6&scoped=true!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./HelloWorld.vue", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-18b485e6&scoped=true!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./HelloWorld.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10604,7 +10604,7 @@
 	
 	
 	// module
-	exports.push([module.id, "h1[_v-561f03f6] {\n  color: tomato; }\n", ""]);
+	exports.push([module.id, "h1[_v-18b485e6] {\n  color: tomato; }\n", ""]);
 	
 	// exports
 
@@ -10904,7 +10904,7 @@
 /* 11 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 _v-561f03f6=\"\">Hello World</h1>";
+	module.exports = "<h1 _v-18b485e6=\"\">Hello World</h1>";
 
 /***/ },
 /* 12 */
