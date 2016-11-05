@@ -2,9 +2,9 @@
 
 > example
 
-<div style="text-align:center">
+<p align="center">
   <img src="img/vue.png" alt="vue" title="vue"/>
-</div>
+</p>
 
 ### Development Setup
 
