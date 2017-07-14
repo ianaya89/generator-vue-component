@@ -1,18 +1,17 @@
 <template lang="pug">
   div
-    h1 Hello World
-    h3(v-show="true") <%= libraryName %>
-    img(src="img/vue.png", alt="vue")
+    h2 Hello World!
+      span {{ emoji }}
+    img(src="./assets/vue.png", alt="vue")
 </template>
 
 <script>
   export default {
-    name: 'HelloWorld'
+    name: 'HelloWorld',
+
+    props: ['emoji']
   }
 </script>
 
 <style lang="scss" scoped>
-  h1 {
-    color: tomato;
-  }
 </style>
