@@ -46,7 +46,7 @@ yo vue-component
     ├───main.js
 └───src/
     ├───assets/
-    └──────vue.png
+        └───vue.png
     ├───HelloWorld.vue
     ├───index.js
 ├───.babelrc
