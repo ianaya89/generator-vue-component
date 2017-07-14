@@ -97,13 +97,6 @@ const libraryGenerator = generators.Base.extend({
       )
     },
 
-    karma () {
-      this.fs.copy(
-        this.templatePath('karma.conf.js'),
-        this.destinationPath('karma.conf.js')
-      )
-    },
-
     index () {
       this.fs.copyTpl(
         this.templatePath('index.html'),
