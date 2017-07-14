@@ -28,7 +28,7 @@ const libraryGenerator = generators.Base.extend({
         name    : 'libraryVersion',
         type    : 'input',
         message : 'Library version:',
-        default : '0.0.1'
+        default : '1.0.0'
       }, {
         name    : 'authorName',
         type    : 'input',
@@ -87,8 +87,8 @@ const libraryGenerator = generators.Base.extend({
 
     eslintrc() {
       this.fs.copy(
-        this.templatePath('eslintrc.js'),
-        this.destinationPath('.eslintrc.js')
+        this.templatePath('eslintrc'),
+        this.destinationPath('.eslintrc')
       );
     },
 
@@ -157,13 +157,6 @@ const libraryGenerator = generators.Base.extend({
       this.fs.copy(
         this.templatePath('editorconfig'),
         this.destinationPath('.editorconfig')
-      );
-    },
-
-    circle() {
-      this.fs.copy(
-        this.templatePath('circle.yml'),
-        this.destinationPath('circle.yml')
       );
     },
 
