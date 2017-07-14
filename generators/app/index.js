@@ -134,13 +134,6 @@ const libraryGenerator = generators.Base.extend({
       )
     },
 
-    npm () {
-      this.fs.copy(
-        this.templatePath('npmrc'),
-        this.destinationPath('.npmrc')
-      )
-    },
-
     npmignore () {
       this.fs.copy(
         this.templatePath('npmignore'),
