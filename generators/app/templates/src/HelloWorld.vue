@@ -1,4 +1,4 @@
-<template lang='pug'>
+<template lang="pug">
   h1 Hello World
 </template>
 
@@ -8,9 +8,8 @@
   };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
   h1 {
     color: tomato;
   }
-
 </style>

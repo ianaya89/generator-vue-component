@@ -1,4 +1,4 @@
-<template lang='pug'>
+<template lang="pug">
   hello-world
 </template>
 
@@ -7,6 +7,6 @@
 
   export default {
     name: 'App',
-    components: [HelloWorld]
+    components: { HelloWorld }
   };
 </script>
