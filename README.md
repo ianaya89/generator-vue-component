@@ -1,8 +1,6 @@
 # generator-vue-component
 
-> Yeoman generator to build custom [Vue.js](http://vuejs.org/) components
-
-:warning: This generator is built for Vue.js v.1, support for v.2 is under development and will be available soon.
+> 📦 Yeoman generator to build your own [Vue.js](http://vuejs.org/) components
 
 [![bitHound Overall Score](https://www.bithound.io/github/ianaya89/generator-vue-component/badges/score.svg)](https://www.bithound.io/github/ianaya89/generator-vue-component)
 [![bitHound Dependencies](https://www.bithound.io/github/ianaya89/generator-vue-component/badges/dependencies.svg)](https://www.bithound.io/github/ianaya89/generator-vue-component/master/dependencies/npm)
@@ -13,84 +11,73 @@
   <img src="img/yeoman.png" alt="yo" title="yo"/>
 </p>
 
+## Support
+- Vue.js 2 => `vue-esc@>=2.0.0` [master]
+- Vue.js 1 => `vue-esc@1.0.0`
 
-### Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-vue-component using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+## Installation
+
+1. First, install [Yeoman](http://yeoman.io) and generator-vue-component using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
-npm install -g yo
-npm install -g generator-vue-component
+$ npm install -g yo
+$ npm install -g generator-vue-component
 ```
 
-Then generate your new project:
+2. Create your project directory and access it.
+
+```bash
+$ mkdir my-awesome-component
+$ cd my-awesome-component
+```
+
+3. Then generate your new project:
 
 ```bash
 yo vue-component
 ```
 
-### Scaffolding
+## Scaffolding
 
 ```
-└───build/
-    ├───utils.js
-    ├───webpack.build.js
-    ├───webpack.build.min.js
-    ├───webpack.config.js
 └───docs/
     ├───App.vue
     ├───main.js
 └───src/
+    ├───assets/
+    └──────vue.png
     ├───HelloWorld.vue
     ├───index.js
-└───test/
-    ├───index.js
-    ├───spec/
-    │   └───index.spec.js
 ├───.babelrc
 ├───.editorconfig
 ├───.eslintignore
-├───.eslintrc.js
+├───.eslintrc.
 ├───.gitignore
 ├───.npmignore
-├───.npmrc
-├───circle.yml
-├───karma.conf.js
 ├───LICENSE
 ├───package.json
 ├───README.md
+├───webpack.config.js
 ```
 
-### Development Setup
+## Development Setup
 
 ```bash
 # install dependencies
 $ npm install
 
-# build docs
-$ npm run docs
-
 # dev mode
 $ npm run dev
 
-# test
-$ npm run test
-
 # build component and get production release
 $ npm run build
-
-# build component and docs
-$ npm run build-all
 ```
 
-
-### Getting To Know Yeoman
-
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
-
 ## License
+[MIT License](https://github.com/ndelvalle/vue-esc/blob/master/LICENSE)
 
-MIT © [Ignacio Anaya](https://twitter.com/ianaya89)
+## Style
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
+
+**⌨️ with ❤️ by [@ianaya89](https://twitter.com/ianaya89)**
