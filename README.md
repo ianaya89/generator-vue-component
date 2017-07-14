@@ -8,7 +8,7 @@
 [![bitHound Code](https://www.bithound.io/github/ianaya89/generator-vue-component/badges/code.svg)](https://www.bithound.io/github/ianaya89/generator-vue-component)
 
 <p align="center">
-  <img src="img/yeoman.png" alt="yo" title="yo"/>
+  <img src="generators/app/templates/src/assets/vue.png" alt="yo" title="yo"/>
 </p>
 
 ## Support
