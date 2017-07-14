@@ -6,4 +6,3 @@ test
 .babelrc
 .eslintignore
 .eslintrc
-karma.conf.js

@@ -124,7 +124,7 @@ const libraryGenerator = generators.Base.extend({
     },
 
     license () {
-      this.fs.copy(
+      this.fs.copyTpl(
         this.templatePath('LICENSE'),
         this.destinationPath('LICENSE'),
         {

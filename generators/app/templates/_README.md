@@ -3,7 +3,7 @@
 > <%= libraryDescription %>
 
 <div style="text-align:center">
-  <img src="img/vue.png" alt="vue" title="vue"/>
+  <img src="src/assets/vue.png" alt="vue" title="vue"/>
 </div>
 
 ### Development Setup
