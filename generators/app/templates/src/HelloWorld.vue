@@ -1,11 +1,14 @@
 <template lang="pug">
-  h1 Hello World
+  div
+    h1 Hello World
+    h3(v-show="true") <%= libraryName %>
+    img(src="img/vue.png", alt="vue")
 </template>
 
 <script>
   export default {
     name: 'HelloWorld'
-  };
+  }
 </script>
 
 <style lang="scss" scoped>
