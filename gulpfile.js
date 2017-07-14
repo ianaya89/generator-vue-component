@@ -1,20 +1,20 @@
-const path             = require('path');
-const gulp             = require('gulp');
-const nsp              = require('gulp-nsp');
-const mocha            = require('gulp-mocha');
-const plumber          = require('gulp-plumber');
-const istanbul         = require('gulp-istanbul');
-const coveralls        = require('gulp-coveralls');
-const excludeGitignore = require('gulp-exclude-gitignore');
+const path = require('path')
+const gulp = require('gulp')
+const nsp = require('gulp-nsp')
+const mocha = require('gulp-mocha')
+const plumber = require('gulp-plumber')
+const istanbul = require('gulp-istanbul')
+const coveralls = require('gulp-coveralls')
+const excludeGitignore = require('gulp-exclude-gitignore')
 
 gulp.task('static', () =>
   gulp.src('**/*.js')
     .pipe(excludeGitignore())
-);
+)
 
 gulp.task('nsp', (cb) => {
-  nsp({ package: path.resolve('package.json') }, cb);
-});
+  nsp({ package: path.resolve('package.json') }, cb)
+})
 
 gulp.task('pre-test', () =>
   gulp.src('generators/index.js')
@@ -23,35 +23,35 @@ gulp.task('pre-test', () =>
       includeUntested: true
     }))
     .pipe(istanbul.hookRequire())
-);
+)
 
 gulp.task('test', ['pre-test'], (cb) => {
-  let mochaErr;
+  let mochaErr
 
   gulp.src('test/**/*.js')
     .pipe(plumber())
     .pipe(mocha({ reporter: 'spec' }))
     .on('error', (err) => {
-      mochaErr = err;
+      mochaErr = err
     })
     .pipe(istanbul.writeReports())
     .on('end', () => {
-      cb(mochaErr);
-    });
-});
+      cb(mochaErr)
+    })
+})
 
 gulp.task('watch', () => {
-  gulp.watch(['generators/**/*.js', 'test/**'], ['test']);
-});
+  gulp.watch(['generators/**/*.js', 'test/**'], ['test'])
+})
 
 gulp.task('coveralls', ['test'], () => {
   if (!process.env.CI) {
-    return;
+    return
   }
 
   return gulp.src(path.join(__dirname, 'coverage/lcov.info'))
-    .pipe(coveralls());
-});
+    .pipe(coveralls())
+})
 
-gulp.task('prepublish', ['nsp']);
-gulp.task('default', ['static', 'test', 'coveralls']);
+gulp.task('prepublish', ['nsp'])
+gulp.task('default', ['static', 'test', 'coveralls'])

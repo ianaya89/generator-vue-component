@@ -1,44 +1,43 @@
-const path       = require('path')
-const yosay      = require('yosay')
-const to         = require('to-case')
+const path = require('path')
+const yosay = require('yosay')
+const to = require('to-case')
 const generators = require('yeoman-generator')
-
 
 const libraryGenerator = generators.Base.extend({
   prompting: {
-    welcome() {
+    welcome () {
       this.log(yosay(
         '\'Allo \'allo! Out of the box I include Babel, Webpack and Karma, as well as a' +
         'few other goodies, to build your own reusable Vue.js Component.'
       ))
     },
 
-    ask() {
+    ask () {
       return this.prompt([{
-        name    : 'libraryName',
-        type    : 'input',
-        message : 'Library name:',
-        filter  : answer => to.slug(answer),
-        default : path.basename(this.destinationPath())
+        name: 'libraryName',
+        type: 'input',
+        message: 'Library name:',
+        filter: answer => to.slug(answer),
+        default: path.basename(this.destinationPath())
       }, {
-        name    : 'libraryDescription',
-        type    : 'input',
-        message : 'Library description:'
+        name: 'libraryDescription',
+        type: 'input',
+        message: 'Library description:'
       }, {
-        name    : 'libraryVersion',
-        type    : 'input',
-        message : 'Library version:',
-        default : '1.0.0'
+        name: 'libraryVersion',
+        type: 'input',
+        message: 'Library version:',
+        default: '1.0.0'
       }, {
-        name    : 'authorName',
-        type    : 'input',
-        message : 'Author name:',
-        store   : true
+        name: 'authorName',
+        type: 'input',
+        message: 'Author name:',
+        store: true
       }, {
-        name    : 'authorEmail',
-        type    : 'input',
-        message : 'Author email:',
-        store   : true
+        name: 'authorEmail',
+        type: 'input',
+        message: 'Author email:',
+        store: true
       }]).then((answers) => {
         this.libraryName = answers.libraryName
         this.libraryDescription = answers.libraryDescription
@@ -51,61 +50,61 @@ const libraryGenerator = generators.Base.extend({
 
   writing: {
 
-    src() {
+    src () {
       this.directory('src', 'src')
     },
 
-    test() {
+    test () {
       this.directory('test', 'test')
     },
 
-    docs() {
+    docs () {
       this.directory('docs', 'docs', { libraryName: this.libraryName })
     },
 
-    favicon() {
+    favicon () {
       this.fs.copy(
         this.templatePath('favicon.ico'),
         this.destinationPath('favicon.ico')
       )
     },
 
-    gitignore() {
+    gitignore () {
       this.fs.copy(
         this.templatePath('gitignore'),
         this.destinationPath('.gitignore')
       )
     },
 
-    eslintrc() {
+    eslintrc () {
       this.fs.copy(
         this.templatePath('eslintrc'),
         this.destinationPath('.eslintrc')
       )
     },
 
-    eslintignore() {
+    eslintignore () {
       this.fs.copy(
         this.templatePath('eslintignore'),
         this.destinationPath('.eslintignore')
       )
     },
 
-    babel() {
+    babel () {
       this.fs.copy(
         this.templatePath('babelrc'),
         this.destinationPath('.babelrc')
       )
     },
 
-    karma() {
+    karma () {
       this.fs.copy(
         this.templatePath('karma.conf.js'),
         this.destinationPath('karma.conf.js')
       )
     },
 
-    index() {
+    index () {
       this.fs.copyTpl(
         this.templatePath('index.html'),
         this.destinationPath('index.html'),
@@ -113,7 +112,7 @@ const libraryGenerator = generators.Base.extend({
       )
     },
 
-    webpack() {
+    webpack () {
       this.fs.copyTpl(
         this.templatePath('webpack.config.js'),
         this.destinationPath('webpack.config.js'),
@@ -121,66 +120,65 @@ const libraryGenerator = generators.Base.extend({
       )
     },
 
-    readme() {
+    readme () {
       this.fs.copyTpl(
         this.templatePath('_README.md'),
         this.destinationPath('README.md'), {
-          libraryName       : this.libraryName,
+          libraryName: this.libraryName,
           libraryDescription: this.libraryDescription
         }
       )
     },
 
-    license() {
+    license () {
       this.fs.copy(
         this.templatePath('LICENSE'),
         this.destinationPath('LICENSE'),
         {
           authorName: this.authorName,
-          year       : new Date().getFullYear()
+          year: new Date().getFullYear()
         }
       )
     },
 
-    npm() {
+    npm () {
       this.fs.copy(
         this.templatePath('npmrc'),
         this.destinationPath('.npmrc')
       )
     },
 
-    npmignore() {
+    npmignore () {
       this.fs.copy(
         this.templatePath('npmignore'),
         this.destinationPath('.npmignore')
       )
     },
 
-    editorconfig() {
+    editorconfig () {
       this.fs.copy(
         this.templatePath('editorconfig'),
         this.destinationPath('.editorconfig')
       )
     },
 
-    packageJSON() {
+    packageJSON () {
       this.fs.copyTpl(
         this.templatePath('_package.json'),
         this.destinationPath('package.json'), {
-          libraryName       : this.libraryName,
+          libraryName: this.libraryName,
           libraryDescription: this.libraryDescription,
-          libraryVersion    : this.libraryVersion,
-          authorName        : this.authorName,
-          authorEmail       : this.authorEmail
+          libraryVersion: this.libraryVersion,
+          authorName: this.authorName,
+          authorEmail: this.authorEmail
         }
       )
     }
   },
 
-  install() {
+  install () {
     this.npmInstall()
   }
 })
-
 
 module.exports = libraryGenerator

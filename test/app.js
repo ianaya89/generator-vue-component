@@ -1,14 +1,14 @@
 /* global describe before it */
 
-const path = require('path');
-const assert = require('yeoman-assert');
-const helpers = require('yeoman-test');
+const path = require('path')
+const assert = require('yeoman-assert')
+const helpers = require('yeoman-test')
 
 describe('generator-vue-component:app', () => {
   before(() =>
     helpers.run(path.join(__dirname, '../generators/app'))
       .withPrompts({ someAnswer: true }).toPromise()
-  );
+  )
 
   it('creates files', () => {
     assert.file([
@@ -20,11 +20,10 @@ describe('generator-vue-component:app', () => {
       '.babelrc',
       '.editorconfig',
       '.eslintignore',
-      '.eslintrc.js',
+      '.eslintrc',
       '.gitignore',
       '.npmignore',
       '.npmrc',
-      'circle.yml',
       'karma.conf.js',
       'LICENSE',
       'index.html',
@@ -33,10 +32,7 @@ describe('generator-vue-component:app', () => {
       'README.md',
       'docs/App.vue',
       'docs/main.js',
-      'build/utils.js',
-      'build/webpack.build.js',
-      'build/webpack.build.min.js',
-      'build/webpack.config.js'
-    ]);
-  });
-});
+      'webpack.config.js'
+    ])
+  })
+})

@@ -1,8 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
 
-const libraryName = '<%= libraryName %>'
-
 module.exports = {
   entry: './docs/main.js',
 

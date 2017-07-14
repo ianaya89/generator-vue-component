@@ -7,4 +7,3 @@ test
 .eslintignore
 .eslintrc
 karma.conf.js
-circle.yml
