@@ -74,6 +74,9 @@ $ npm run dev
 $ npm run build
 ```
 
+## TODO
+1. Jest Integration [help wanted 🙏]
+
 ## License
 [MIT License](https://github.com/ndelvalle/vue-esc/blob/master/LICENSE)
 
