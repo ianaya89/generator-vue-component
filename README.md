@@ -12,8 +12,8 @@
 </p>
 
 ## Support
-- Vue.js 2 => `vue-esc@>=2.0.0` [master]
-- Vue.js 1 => `vue-esc@1.0.0`
+- Vue.js 2 => `generator-vue-component@>=2.0.0` [master]
+- Vue.js 1 => `generator-vue-component@1.0.0`
 
 
 ## Installation
