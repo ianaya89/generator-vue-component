@@ -76,6 +76,7 @@ $ npm run build
 
 ## TODO
 1. Jest Integration [help wanted 🙏]
+2. Docs production build
 
 ## License
 [MIT License](https://github.com/ndelvalle/vue-esc/blob/master/LICENSE)
